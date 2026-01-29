@@ -73,7 +73,7 @@ class Database:
     def _print_startup_message(self):
         """Print formatted startup message"""
         print(f"\n{Fore.CYAN}{'='*50}")
-        print(f"{Fore.CYAN}🚀 ITsGOLU_UPLOADER Bot - Database Initialization")
+        print(f"{Fore.CYAN}🚀 ONeX_UPLOADER Bot - Database Initialization")
         print(f"{'='*50}{Style.RESET_ALL}\n")
 
     def _initialize_database(self):
@@ -329,7 +329,7 @@ class Database:
             return usernames if usernames else ["ITsGOLU_UPLOADER"]
         except Exception as e:
             print(f"{Fore.RED}List bot usernames error: {str(e)}{Style.RESET_ALL}")
-            return ["ITsGOLU_UPLOADER"]
+            return ["ONeX_UPLOADER"]
 
     async def cleanup_expired_users(self, bot) -> int:
         """
@@ -441,7 +441,7 @@ class Database:
 
 # 🔰 Startup Message
 print(f"\n{Fore.CYAN}{'='*50}")
-print(f"🤖 Initializing ITsGOLU_UPLOADER Bot Database")
+print(f"🤖 Initializing ONeX_UPLOADER Bot Database")
 print(f"{'='*50}{Style.RESET_ALL}\n")
 
 # 🔌 Connect to DB with error handling
