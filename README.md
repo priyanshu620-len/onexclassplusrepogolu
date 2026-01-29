@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.ibb.co/v6Vr7HCt/1000003297.png" alt="DEV-TXT-LEECH">
+  <img src="https://chatgpt.com/s/m_697b0779eb0481918f6e0f1d10c558f8" alt="DEV-TXT-LEECH">
 </p>
 <h1 align="center">
   <a href="https://github.com/VAiDH1661/ITsGOLU_UPLOADER">
