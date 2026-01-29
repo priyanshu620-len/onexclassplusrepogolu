@@ -71,7 +71,7 @@ async def progress_bar(current, total, reply, start):
     percent = (current / total) * 100
     eta_seconds = (total - current) / speed if speed > 0 else 0
 
-    bar_length = 12
+    bar_length = 10
 
     # Calculate how many blocks filled (float for smoothness)
     progress_ratio = current / total
@@ -107,19 +107,20 @@ async def progress_bar(current, total, reply, start):
     progress_bar_str = "".join(progress_bar_list)
 
     msg = (
-        f"╭───⌯═════ 𝐁𝐎𝐓 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 ═════⌯\n"
+        f"╭───⌯═════ 🚀𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐒𝐓𝐀𝐓𝐔𝐒🚀 ═════⌯\n"
         f"├  **{percent:.1f}%** `{progress_bar_str}`\n├\n"
-        f"├ 🛜  𝗦𝗣𝗘𝗘𝗗 ➤ | {hrb(speed)}/s \n"
+        f"├ 🚀  𝗦𝗣𝗘𝗘𝗗 ➤ | {hrb(speed)}/s \n"
         f"├ ♻️  𝗣𝗥𝗢𝗖𝗘𝗦𝗦𝗘𝗗 ➤ | {hrb(current)} \n"
         f"├ 📦  𝗦𝗜𝗭𝗘 ➤ | {hrb(total)} \n"
         f"├ ⏰  𝗘𝗧𝗔 ➤ | {hrt(eta_seconds, 1)}\n\n"
-        f"╰─═══ ** 𝐈𝐓'𝐬𝐆𝐎𝐋𝐔 **═══─╯"
+        f"╰─═══ ** ONҽX **═══─╯"
     )
 
     try:
         await reply.edit(msg)
     except FloodWait as e:
         time.sleep(e.x)
+
 
 
 
