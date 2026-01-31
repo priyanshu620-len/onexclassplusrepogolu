@@ -54,7 +54,8 @@ RUN mkdir -p /etc/aria2 \
          "check-integrity=true" > /etc/aria2/aria2.conf
 
 # Use gunicorn with reduced workers to save memory
-CMD ["python3", "main.py"]
+CMD ["python", "main.py"]
+
 
 
 
