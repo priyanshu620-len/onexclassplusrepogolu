@@ -88,7 +88,7 @@ bot = Client(
     "ONeX",
     api_id=API_ID,
     api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
+    bot_token=8405557263:AAG0PHKMI5V6bXRueT5l2b4-JHq0sFRYwok,
     workers=300,
     sleep_threshold=60,
     in_memory=True
