@@ -54,12 +54,8 @@ RUN mkdir -p /etc/aria2 \
          "check-integrity=true" > /etc/aria2/aria2.conf
 
 # Use gunicorn with reduced workers to save memory
-CMD gunicorn --bind 0.0.0.0:${PORT:-8000} \
-    --workers 1 \
-    --threads 2 \
-    --timeout 120 \
-    app:app & \
-    aria2c --enable-rpc --rpc-listen-all --daemon=true && \
-    python3 main.py
+CMD CMD ["python3", "main.py"]
+
+
 
 
