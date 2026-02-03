@@ -108,11 +108,12 @@ async def progress_bar(current, total, reply, start):
 
     msg = (
         f"————-- 🚀ʙᴏᴛ ꜱᴛᴀᴛɪᴄꜱ🚀 ———-\n"
-        f"  {percent:.1f}% `{progress_bar_str}`\n├\n" 
+        f"  {progress_bar_str}\n-\n"
+        f"   PROGRESS ➤ | {percent:.1f}%
         f" 🚀  𝗦𝗣𝗘𝗘𝗗 ➤ | {hrb(speed)}/s \n"
         f" ♻️  𝗣𝗥𝗢𝗖𝗘𝗦𝗦𝗘𝗗 ➤ | {hrb(current)} \n"
         f" 📦  𝗦𝗜𝗭𝗘 ➤ | {hrb(total)} \n"
-        f" ⏰  𝗘𝗧𝗔 ➤ | {hrt(eta_seconds, 1)}\n"
+        f" ⏰  𝗘𝗧𝗔 ➤ | {hrt(eta_seconds, 1)}\n\n"
         f"————-  𝐎𝐍𝐞𝐗 —————"
     )
 
@@ -120,6 +121,7 @@ async def progress_bar(current, total, reply, start):
         await reply.edit(msg)
     except FloodWait as e:
         time.sleep(e.x)
+
 
 
 
